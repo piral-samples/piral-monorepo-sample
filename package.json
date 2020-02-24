@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "debug:piral": "piral debug packages/app-shell",
+    "build:piral": "piral build packages/app-shell"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.0",
+    "piral-cli": "0.10.7"
+  }
+}
