@@ -11,6 +11,8 @@
     "start": "piral debug",
     "build": "piral build"
   },
+  "main": "./src/index.tsx",
+  "typings": "./dist/app/index.d.ts",
   "app": "./src/index.html",
   "pilets": {
     "files": [],
@@ -29,12 +31,12 @@
     "@types/react-dom": "latest",
     "@types/react-router": "latest",
     "@types/react-router-dom": "latest",
-    "piral-cli": "0.10.7",
+    "piral-cli": "0.11.1",
     "piral-cli-dotenv": "0.1.0",
     "sass": "^1.25.0",
     "typescript": "latest"
   },
   "dependencies": {
-    "piral": "0.10.7"
+    "piral": "0.11.1"
   }
 }

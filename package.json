@@ -5,11 +5,13 @@
     "packages/*"
   ],
   "scripts": {
-    "debug:piral": "piral debug packages/app-shell",
-    "build:piral": "piral build packages/app-shell"
+    "debug:piral": "cd packages/app-shell && piral debug",
+    "build:piral": "cd packages/app-shell && piral build",
+    "debug:my-pilet": "cd packages/my-pilet && pilet debug",
+    "build:my-pilet": "cd packages/my-pilet && pilet build"
   },
   "devDependencies": {
     "lerna": "^3.13.0",
-    "piral-cli": "0.10.7"
+    "piral-cli": "0.11.1"
   }
 }
