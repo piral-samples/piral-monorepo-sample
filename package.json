@@ -5,10 +5,14 @@
     "packages/*"
   ],
   "scripts": {
-    "debug:piral": "cd packages/app-shell && piral debug",
-    "build:piral": "cd packages/app-shell && piral build",
-    "debug:my-pilet": "cd packages/my-pilet && pilet debug",
-    "build:my-pilet": "cd packages/my-pilet && pilet build"
+    "start": "yarn watch:all",
+    "add:pilet": "pilet new app-shell --target packages/${name:-x}-pilet",
+    "upgrade:pilet": "pilet upgrade --target packages/${name:-x}-pilet",
+    "watch:all": "pilet debug 'packages/*-pilet/src/index.tsx'",
+    "watch:piral": "piral debug packages/app-shell/src/index.html",
+    "watch:pilet": "pilet debug packages/${name:-x}-pilet/src/index.tsx",
+    "build:piral": "piral build packages/app-shell/src/index.html",
+    "build:pilet": "pilet build packages/${name:-x}-pilet/src/index.tsx"
   },
   "devDependencies": {
     "lerna": "^3.13.0",
