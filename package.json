@@ -15,8 +15,13 @@
     "build:pilet": "pilet build packages/${name:-x}-pilet/src/index.tsx"
   },
   "devDependencies": {
-    "lerna": "^3.13.0",
-    "piral-cli": "0.14.0",
-    "piral-cli-webpack5": "0.14.0"
-  }
+    "lerna": "^8",
+    "piral-cli": "^1",
+    "piral-cli-webpack5": "^1"
+  },
+  "resolutions": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

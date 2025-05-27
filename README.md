@@ -8,10 +8,10 @@
 
 ## Getting Started
 
-First, use `lerna` to bootstrap the mono repo. Make sure to have `yarn` (v1) installed for this.
+First, use `yarn` to install the missing dependencies for the monorepo. Make sure to have `yarn` (v1) installed for this.
 
 ```sh
-npx lerna bootstrap
+yarn install
 ```
 
 ## Running the Code

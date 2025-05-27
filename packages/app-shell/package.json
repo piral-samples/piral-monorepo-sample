@@ -8,33 +8,23 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
     "info:piral": "piral debug --help",
+    "postinstall": "piral declaration",
     "start": "piral debug",
     "build": "piral build"
   },
   "main": "./src/index.tsx",
-  "typings": "./dist/app/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "app": "./src/index.html",
-  "pilets": {
-    "files": [],
-    "externals": [],
-    "scripts": {},
-    "validators": {},
-    "devDependencies": {},
-    "preScaffold": "",
-    "postScaffold": "",
-    "preUpgrade": "",
-    "postUpgrade": ""
-  },
   "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@types/react-router": "latest",
-    "@types/react-router-dom": "latest",
-    "sass": "^1.25.0",
-    "typescript": "latest"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-router": "^5",
+    "@types/react-router-dom": "^5",
+    "sass": "^1",
+    "typescript": "^5"
   },
   "dependencies": {
-    "piral": "0.14.0"
+    "piral": "^1"
   }
 }
